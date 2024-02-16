@@ -243,11 +243,12 @@ h6 {
   height: 100vh;
   background: url("../img/hero-bg.jpg") top center;
   background-size: cover;
+  position: relative;
 }
 
 #hero:before {
   content: "";
-  background: rgba(5, 13, 24, 0.3);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)); /* Dégradé du noir transparent au noir plus opaque */
   position: absolute;
   bottom: 0;
   top: 0;
@@ -261,6 +262,7 @@ h6 {
   z-index: 2;
   min-width: 300px;
 }
+
 
 #hero h1 {
   margin: 0 0 10px 0;
